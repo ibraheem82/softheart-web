@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'softapp'
-]
+    'softapp.apps.SoftappConfig'
+ ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -127,6 +127,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+
+# Media Settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+
+BLOG_MEDIA_ROOT = os.path.join(MEDIA_ROOT, 'blog')
+BLOG_MEDIA_URL = MEDIA_URL + 'blog/'
+
+COURSE_MEDIA_ROOT = os.path.join(MEDIA_ROOT, 'course')
+COURSE_MEDIA_URL = MEDIA_URL + 'course/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
