@@ -3,3 +3,4 @@ ibraheem
 softheart/softapp/migrations
 softheart/softapp/__pycache__
 softheart/static
+softheart/db.sqlite
