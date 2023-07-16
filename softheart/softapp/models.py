@@ -1,3 +1,5 @@
+import os
+from PIL import Image
 from django.db import models
 import uuid
 from django.core.validators import FileExtensionValidator
